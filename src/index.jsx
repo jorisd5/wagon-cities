@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 
 import citiesReducer from './reducers/cities';
+import citySelectedReducer from './reducers/city_selected';
 
 // internal modules
 import App from './components/app';
@@ -12,7 +13,8 @@ import '../assets/stylesheets/application.scss';
 
 // State and reducers
 const rootReducer = combineReducers({
-  cities: citiesReducer
+  cities: citiesReducer,
+  activeCity: citySelectedReducer
 });
 
 export default rootReducer;
