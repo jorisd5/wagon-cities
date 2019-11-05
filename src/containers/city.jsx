@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { selectCity } from '../actions';
+import selectCity from '../actions';
 
 const City = (props) => {
   return (
